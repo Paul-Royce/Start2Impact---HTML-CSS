@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +24,8 @@
 
 body {
     background-color: rgb(229, 229, 241) !important; /* There is no a specific reason for me to keep the property, i just want it here */
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -92,21 +94,25 @@ header {
 
 
 #blue-heading {
-    cursor: default;
     color: rgb(43, 76, 226);
+    cursor: default;
     padding-top: 8rem;
     padding-bottom: 2rem;
 }
 
 header h2 {
     cursor: default;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 1rem;
     padding: 0px 10px;
 }
 
 /* main content CSS */
 
-.bg-style { 
+.bg-style {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,6 +167,8 @@ section h3 > a{
 }
 
 .link-button {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300;
     background-color: rgba(0, 0, 0, 0.562);
     letter-spacing: 2px;
     padding: 20px;
