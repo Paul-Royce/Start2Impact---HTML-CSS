@@ -92,7 +92,6 @@ header {
     padding: 1rem 2.5rem;
 }
 
-
 #blue-heading {
     color: rgb(43, 76, 226);
     cursor: default;
@@ -117,7 +116,6 @@ header h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 /* first row background images */
 .bg-img-left {
