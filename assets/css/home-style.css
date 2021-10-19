@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 1rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 153, 255);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:#ffc144;
+  }
+
+body {
+    background-color: rgb(229, 229, 241) !important; /* There is no a specific reason for me to keep the property, i just want it here */
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    color: white;
+    background-image: url(../img/bridge-336475_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    height: 80vh;
+    position: relative;
+}
+
+.menu-text {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    letter-spacing: 3px;
+
+
+    cursor: pointer;
+    margin: auto;
+    padding: 40px 0px;
+    background-size: 400%;
+    background-image: linear-gradient(45deg, rgb(50, 138, 252), rgb(238, 130, 238), rgb(226, 184, 67));
+    animation: background-animation 30s infinite alternate; 
+}    
+
+.menu-text > a {
+    color: black;
+}
+
+.menu-text:hover > a {
+    color: rgb(229, 229, 241);
+   
+}
+
+.menu-text:hover {
+    background-size: 200%;
+    background-image: linear-gradient(90deg, rgb(50, 138, 252), rgb(238, 130, 238), rgba(245, 189, 35));
+    animation: background-animatioon 5s infinite alternate;
+}
+
+
+.bio-button {
+    color: white;
+    background-size: 400%;
+    background-image: linear-gradient(45deg, rgb(60, 142, 250),rgb(231, 231, 171), rgb(238, 130, 238), rgb(128, 128, 128));
+    animation: background-animation 5s infinite alternate;
+    transition: 500ms;
+    
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    letter-spacing: 3px;
+    box-shadow: 0px 7px 10px  rgb(0, 0, 0);
+
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.bio-button:hover {
+    padding: 1rem 2.5rem;
+}
+
+#blue-heading {
+    color: rgb(43, 76, 226);
+    cursor: default;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+header h2 {
+    cursor: default;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1rem;
+    padding: 0px 10px;
+}
+
+/* main content CSS */
+
+.bg-style {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* first row background images */
+.bg-img-left {
+    background-image: url(../img/code-1839406_1280.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.bg-img-center {
+    background-image: url(../img/meeting-1245776_1280.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.bg-img-right {
+    background-image: url(../img/arrows-2889040_1280.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* second row background images */
+.bg-img-left-2row {
+    background-image: url(../img/training-2877134_1280.jpg);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.bg-img-center-2row {
+    background-image: url(../img/pianist-1149172_1280.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.bg-img-right-2row {
+    background-image: url(../img/1920_nature_and_happiness-503786.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* animated buttons positioning */
+section h3 > a{
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-button {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.562);
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.bg-style:hover .link-button {
+    background-size: 400%;
+    background-image: linear-gradient(45deg, rgba(120, 174, 245, 0.8),rgb(231, 231, 171), rgb(238, 130, 238), rgb(128, 128, 128));
+    animation: background-animation 5s infinite alternate;
+}
+
+.bg-style:hover {
+    background-blend-mode: multiply;
+}
+
+
+
+
+
