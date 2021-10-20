@@ -30,9 +30,11 @@ body {
 
 header {
     color: white;
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: url(../img/bridge-336475_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
     
     text-align: center;
     height: 80vh;
@@ -101,7 +103,7 @@ header {
 
 header h2 {
     cursor: default;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     margin-top: 1rem;
     padding: 0px 10px;
