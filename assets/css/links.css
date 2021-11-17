@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 153, 255);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#ffd476;
+  }
+
+body {
+    color: #333;
+    background-size: 400%;
+    background-image: linear-gradient(45deg, rgba(90, 159, 250, 0.7), rgba(238, 130, 238, 0.7), rgba(128, 128, 128, 0.5));
+}
+/* THE TRUE AND PROPER HEADER IS NOT IN THIS CSS, THERE ARE MANY DEDICATED CSS HEADER FILES FOR EACH SECTION OF THE PROJECT */
+
+header .page-label {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.562);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+h2 {
+  color: rgb(0, 153, 255);
+  font-weight: 600;
+  text-align: center;
+}
+
+article {
+  background-color: white;
+  text-align: left;
+
+  margin: 50px auto;
+  padding: 40px;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 30px 30px 20px gray;
+}
+
+.img-article {
+  background-image: url(../img/Me\ on\ a\ mountain\ bike.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+article > p, ol{
+  font-size: 1.3em;
+}
+
+.vision-img {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/people.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 20px;
+  min-height: 500px;
+  position: relative;
+}
+.vision-img > p {
+  color: white;
+  font-size: 1.7em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p:last-child > a {
+  color: rgb(0, 202, 0);
+}
+
+.next-section-box {
+  box-shadow: 30px 30px 20px gray;
+  background-image: url(../img/Montepellegrino-curve.jpg);
+  background-size: cover;
+  background-position-y: 70%;
+
+  text-align: center;
+  border-radius: 20px;
+  margin: 70px auto;
+  padding: 30px;
+  width: 70%;
+}
+
+.next-section-box > h2{
+  margin-bottom: 2rem;
+}
+
+.next-section-box  a {
+  font-size: 1.6em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 20%;
+  
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transition: 1s;
+}
+
+/* HOVERING EFFECTS */
+.next-section-box:hover a {
+  background-size: 400%;
+  background-image: linear-gradient(45deg, rgba(120, 174, 245, 0.8),rgb(231, 231, 171), rgb(238, 130, 238), rgb(128, 128, 128));
+  animation: background-animation 5s infinite alternate;
+}
+
+
+@media only screen and (max-width: 400px) {
+  article {
+    padding: 10px;
+    width: 90%;
+  }
+
+  article > p, ol{
+    font-size: 1em;
+  }
+  .vision-img > p {
+    font-size: 1.1em;
+  }
+
+  .img-article {
+    background-position-x: 45%;
+  }
+
+  .next-section-box {
+    width: 90%;
+  }
+
+}
+
