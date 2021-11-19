@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 153, 255);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#ffd476;
+  }
+
+body {
+    color: #333;
+    background-size: 400%;
+    background-image: linear-gradient(45deg, rgba(90, 159, 250, 0.7), rgba(238, 130, 238, 0.7), rgba(128, 128, 128, 0.5));
+}
+
+header {
+    background-image: url(../../assets/img/numbers.jpg);
+    background-size: cover;
+    background-position-y: 55%;
+    background-repeat: no-repeat;
+    
+    height: 40vh;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+header .page-label {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.562);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+main {
+    background-color:rgb(34, 154, 201);
+    padding: 40px;
+    border-radius: 20px;
+    margin: auto;
+    width: 70%;
+}
+
+.row {
+    gap: 20px;
+}
+
+.counter-display {
+    background-color: rgb(229, 229, 241) !important;
+    font-size: 6em;
+    border-radius: 30px;
+    margin: auto;
+    width: 250px;
+    height: 20vh;
+    line-height: 20vh;
+}
+
+.operand-boxes {
+    height: 25vh;
+    position: relative;
+}
+
+/* i'm leaving these 2 boxes as a comment in case i would need them in future as a reference point for furhter adjustments of the buttons */
+/* .decrease-box {
+    background-color: green;
+}
+
+.increase-box {
+    background-color: red;
+} */
+
+.operand-boxes button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 4em;
+    width: 40%;
+    height: 12vh;
+    line-height: 12vh;
+    border-radius: 60px;
+}
+
+#reset {
+    font-size: 2em;
+    min-width: 20%;
+    border-radius: 60px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.658);
+    transition: 0.4s;
+}
+#reset:hover {
+    background-color: blanchedalmond;
+    border-radius: 0px;
+}
+#reset:active {
+    background-color: blanchedalmond;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.658);
+}
+
+#button-decrease {
+    background-color:  rgb(196, 4, 4);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.658);
+}
+#button-decrease:hover {
+    background-color:  rgb(255, 0, 0);
+}
+#button-decrease:active {
+    background-color:  rgb(255, 0, 0);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+#button-increase {
+   background-color: rgb(1, 163, 1);
+   box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.658);
+}
+#button-increase:hover {
+   background-color: rgb(125, 248, 125);
+}
+#button-increase:active {
+   background-color: rgb(125, 248, 125);
+   box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 400px) {
+    .counter-display {
+        background-color: rgb(229, 229, 241) !important;
+        font-size: 6em;
+        border-radius: 30px;
+        margin: auto;
+        width: 200px;
+        height: 20vh;
+        line-height: 20vh;
+    }
+
+    main {
+        width: 85%;
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+    #reset {
+        width: 55%;
+    }
+
+    .operand-boxes button {
+        width: 65%;
+    }
+}
