@@ -117,7 +117,6 @@ main {
     transition: 0.4s;
 }
 #reset:hover {
-    background-color: blanchedalmond;
     border-radius: 0px;
 }
 #reset:active {
@@ -126,7 +125,7 @@ main {
 }
 
 #button-decrease {
-    background-color:  rgb(196, 4, 4);
+    background-color:  rgb(185, 3, 3);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.658);
 }
 #button-decrease:hover {
@@ -150,6 +149,10 @@ main {
 }
 
 @media only screen and (max-width: 400px) {
+    #reset:hover {
+        background-color: white;
+        border-radius: 60px;
+    }
     .counter-display {
         background-color: rgb(229, 229, 241) !important;
         font-size: 6em;
