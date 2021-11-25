@@ -62,7 +62,12 @@ article {
   padding: 40px;
   width: 70%;
   border-radius: 20px;
+  transition: 1s;
+}
+
+article:hover {
   box-shadow: 30px 30px 20px gray;
+
 }
 
 .img-article {
