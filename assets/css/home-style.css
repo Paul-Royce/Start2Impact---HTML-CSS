@@ -41,6 +41,14 @@ header {
     position: relative;
 }
 
+#blue-heading {
+    font-size: 25px;
+    color: rgb(43, 76, 226);
+    cursor: default;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+
 .menu-text {
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -94,12 +102,6 @@ header {
     padding: 1rem 2.5rem;
 }
 
-#blue-heading {
-    color: rgb(43, 76, 226);
-    cursor: default;
-    padding-top: 8rem;
-    padding-bottom: 2rem;
-}
 
 header h2 {
     cursor: default;
@@ -159,7 +161,7 @@ header h2 {
 }
 
 /* animated buttons positioning */
-section h3 > a{
+main h3 > a{
     position: absolute;
     top: 78%;
     left: 50%;
