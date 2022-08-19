@@ -1,37 +1,60 @@
-.counter-section {
-    background-image: url(../assets/img/numbers.jpg);
-    background-color: rgba(0, 0, 0, 0.377);
-    background-blend-mode: multiply;
-    height: 300px;
-    position: relative;
+/* Background sections is a general template that i use for different sections */
+.background-section {
+  background-color: rgba(0, 0, 0, 0.377);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 300px;
+  position: relative;
 }
-  
-.counter-label {
-   font-family: 'Open Sans', sans-serif; 
-   font-weight: 300;
-   color: white;
-   background-color: rgb(3, 110, 233);
-   
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   
-   letter-spacing: 2px;
-   padding: 20px;
-   border-radius: 40px;
+
+.counter-bg {
+  background-image: url(../assets/img/numbers.jpg);
 }
-.counter-section:hover .counter-label {
-    color: rgb(11, 137, 240);
-    background-color: rgb(250, 135, 4);
-    border-radius: 5px;
-    text-decoration: underline 2px white;
-    transition: 0.4s;
+
+.city-ranking-bg {
+  background-image: url(../assets/img/536764_skyscraper-at-night-wallpaper_2048x1142_h.jpg);
 }
-.counter-section:hover .counter-label:active {
-    text-decoration: underline 2px rgb(0, 204, 255);
+
+.ip-address-bg {
+  background-image: url(../assets/img/images.jpg);
 }
-  
-.counter-label > a {
-    color: white;
+
+.section-label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: rgb(3, 110, 233);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  letter-spacing: 2px;
+  padding: 20px;
+  border-radius: 40px;
+}
+.background-section:hover .section-label {
+  background-color: rgb(250, 135, 4);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.section-label > button {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.btn-counter {
+  color: red;
+  border-radius: 5px;
+  background: radial-gradient(circle, fire-active 0.25em, transparent 0.25em)
+    center/1.2em 1.2em;
+  border: 3px solid fire-active;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
